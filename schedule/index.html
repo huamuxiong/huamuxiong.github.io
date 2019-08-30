@@ -57,16 +57,17 @@
 
   <meta name="description" content="Qingqing leisurely my class">
 <meta property="og:type" content="website">
-<meta property="og:title" content="huamuxiong blogs">
-<meta property="og:url" content="https://huamuxiong.github.io/archives/2019/index.html">
+<meta property="og:title" content="schedule">
+<meta property="og:url" content="https://huamuxiong.github.io/schedule/index.html">
 <meta property="og:site_name" content="huamuxiong blogs">
 <meta property="og:description" content="Qingqing leisurely my class">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-30T14:24:04.066Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="huamuxiong blogs">
+<meta name="twitter:title" content="schedule">
 <meta name="twitter:description" content="Qingqing leisurely my class">
-  <link rel="alternate" href="../../atom.xml" title="huamuxiong blogs" type="application/atom+xml">
-  <link rel="canonical" href="https://huamuxiong.github.io/archives/2019/">
+  <link rel="alternate" href="../atom.xml" title="huamuxiong blogs" type="application/atom+xml">
+  <link rel="canonical" href="https://huamuxiong.github.io/schedule/">
 
 
 <script id="page-configurations">
@@ -75,12 +76,12 @@
     sidebar: "",
     isHome: false,
     isPost: false,
-    isPage: false,
-    isArchive: true
+    isPage: true,
+    isArchive: false
   };
 </script>
 
-  <title>Archive | huamuxiong blogs</title>
+  <title>schedule | huamuxiong blogs</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -302,124 +303,208 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-        
-          
-        
-        <span class="collection-header">Um..! 3 posts in total. Keep on posting.</span>
-      </div>
-      
-
-      
-
-  
-  
-
-  
+  <div id="posts" class="posts-expand">
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">schedule
+
+</h1>
+
+<div class="post-meta">
+  
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+          <ul id="event-list">
+          </ul>
+          <script>
+(function() {
+  // Initialization
+  var calendar = {
+    orderBy     : 'startTime',
+    showLocation: 'false',
+    offsetMax   : 72,
+    offsetMin   : 4,
+    showDeleted : 'false',
+    singleEvents: 'true',
+    maxResults  : '250'
+  }
+
+  // Read config form theme config file
+  Object.assign(calendar, {"calendar_id":"<required>","api_key":"<required>","orderBy":"startTime","offsetMax":24,"offsetMin":4,"showDeleted":false,"singleEvents":true,"maxResults":250});
+
+  var now = new Date();
+  var timeMax = new Date();
+  var timeMin = new Date();
+
+  timeMax.setHours(now.getHours() + calendar.offsetMax);
+  timeMin.setHours(now.getHours() - calendar.offsetMin);
+  calendar.timeMaxISO      = timeMax.toISOString();
+  calendar.timeMinISO      = timeMin.toISOString();
+
+  // Build URL
+  const BASE_URL           = 'https://www.googleapis.com/calendar/v3/calendars/';
+  const FIELD_KEY          = 'key';
+  const FIELD_ORDERBY      = 'orderBy';
+  const FIELD_TIMEMAX      = 'timeMax';
+  const FIELD_TIMEMIN      = 'timeMin';
+  const FIELD_SHOWDELETED  = 'showDeleted';
+  const FIELD_SINGLEEVENTS = 'singleEvents';
+  const FIELD_MAXRESULTS   = 'maxResults';
+
+  var request_url = BASE_URL + calendar.calendar_id  + '/events?' +
+    FIELD_KEY          + '=' + calendar.api_key      + '&' +
+    FIELD_ORDERBY      + '=' + calendar.orderBy      + '&' +
+    FIELD_TIMEMAX      + '=' + calendar.timeMaxISO   + '&' +
+    FIELD_TIMEMIN      + '=' + calendar.timeMinISO   + '&' +
+    FIELD_SHOWDELETED  + '=' + calendar.showDeleted  + '&' +
+    FIELD_SINGLEEVENTS + '=' + calendar.singleEvents + '&' +
+    FIELD_MAXRESULTS   + '=' + calendar.maxResults;
+
+  fetchData();
+  var queryLoop = setInterval(fetchData, 60000);
+
+  function fetchData() {
+    var eventList = document.getElementById('event-list');
+    if (!eventList) return;
+
+    fetch(request_url).then(response => {
+      return response.json();
+    }).then(data => {
+      // Clean the event list
+      eventList.innerHTML = '';
+      var prevEnd = 0; // used to decide where to insert an <hr>
+
+      data.items.forEach(event => {
+        // Parse data
+        var utc   = new Date().getTimezoneOffset() * 60000;
+        var start = event.start.dateTime = new Date(event.start.dateTime || (new Date(event.start.date).getTime() + utc));
+        var end   = event.end.dateTime = new Date(event.end.dateTime || (new Date(event.end.date).getTime() + utc));
+
+        tense = judgeTense(now, start, end); // 0:now 1:future -1:past
+
+        if (tense == 1 && prevEnd < now) {
+          eventList.innerHTML += '<hr>';
+        }
+
+        eventDOM = buildEventDOM(tense, event);
+        eventList.innerHTML += eventDOM;
+
+        prevEnd = end;
+      });
+    });
+  }
+
+  function getRelativeTime(current, previous) {
+    var msPerMinute = 60 * 1000;
+    var msPerHour = msPerMinute * 60;
+    var msPerDay = msPerHour * 24;
+    var msPerMonth = msPerDay * 30;
+    var msPerYear = msPerDay * 365;
+
+    var elapsed = current - previous;
+    var tense = elapsed > 0 ? 'ago' : 'later';
+
+    elapsed = Math.abs(elapsed);
+
+    if      ( elapsed < msPerHour  ) {
+      return Math.round(elapsed/msPerMinute) + ' minutes ' + tense;
+    }
+    else if ( elapsed < msPerDay   ) {
+      return Math.round(elapsed/msPerHour) + ' hours ' + tense;
+    }
+    else if ( elapsed < msPerMonth ) {
+      return 'about ' + Math.round(elapsed/msPerDay) + ' days ' + tense;
+    }
+    else if ( elapsed < msPerYear  ) {
+      return 'about ' + Math.round(elapsed/msPerMonth) + ' months ' + tense;
+    }
+    else {
+      return 'about' + Math.round(elapsed/msPerYear) + ' years' + tense;
+    }
+  }
+
+  function judgeTense(now, eventStart, eventEnd) {
+    if      (eventEnd   < now) { return -1; }
+    else if (eventStart > now) { return  1; }
+    else                       { return  0; }
+  }
+
+  function buildEventDOM(tense, event) {
+    var tenseClass = '';
+    var start      = event.start.dateTime;
+    var end        = event.end.dateTime;
+    switch(tense) {
+      case 0 : // now
+        tenseClass = 'event-now';
+        break;
+      case 1 : // future
+        tenseClass = 'event-future';
+        break;
+      case -1: // past
+        tenseClass = 'event-past';
+        break;
+      default:
+        throw 'Time data error';
+    }
+    durationFormat = {
+      weekday: 'short',
+      hour   : '2-digit',
+      minute : '2-digit'
+    };
+    relativeTimeStr = (tense == 0) ? 'NOW' : getRelativeTime(now, start);
+    durationStr = start.toLocaleTimeString([], durationFormat) + ' - ' +
+                  end.toLocaleTimeString([], durationFormat);
+
+    liOpen  = '<li class="event ' + tenseClass + '">';
+    liClose = '</li>';
+    h2Open  = '<h2 class="event-summary">';
+    h2Close = '</h2>';
+
+    locationDOM     = '';
+    if (calendar.showLocation && event.location) {
+      locationDOM   = '<span class="event-location event-details">' + event.location + '</span>';
+    }
+    relativeTimeDOM = '<span class="event-relative-time">' + relativeTimeStr + '</span>';
+    durationDOM     = '<span class="event-duration event-details">' + durationStr + '</span>';
+
+    eventContent =
+      liOpen +
+        h2Open +
+          event.summary +
+          relativeTimeDOM+
+        h2Close +
+        locationDOM +
+        durationDOM +
+      liClose;
+    return eventContent;
+  }
+})();
+</script>
+
+        
+      </div>
+      
+      
+      
     </div>
-  
+    
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="../../2019/08/28/test/" itemprop="url">
-            <span itemprop="name">test</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-28T18:20:37+08:00"
-              content="2019-08-28">
-          08-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="../../2019/08/28/hexo-page-blog-test/" itemprop="url">
-            <span itemprop="name">hexo-page-blog-test</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-28T17:25:04+08:00"
-              content="2019-08-28">
-          08-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="../../2019/08/28/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-28T15:38:39+08:00"
-              content="2019-08-28">
-          08-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-
-    </div>
+    
+    
+    
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -438,6 +523,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
