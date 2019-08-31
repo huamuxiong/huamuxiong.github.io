@@ -5,9 +5,9 @@
   
   <link href="/huamuxiong.github.io/atom.xml" rel="self"/>
   
-  <link href="https://github.com/huamuxiong/huamuxiong.github.io/"/>
+  <link href="https://github.com/huamuxiong/"/>
   <updated>2019-08-30T17:28:38.438Z</updated>
-  <id>https://github.com/huamuxiong/huamuxiong.github.io/</id>
+  <id>https://github.com/huamuxiong/</id>
   
   <author>
     <name>huamuxiong</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>test</title>
-    <link href="https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/test/"/>
-    <id>https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/test/</id>
+    <link href="https://github.com/huamuxiong/2019/08/28/test/"/>
+    <id>https://github.com/huamuxiong/2019/08/28/test/</id>
     <published>2019-08-28T10:20:37.000Z</published>
     <updated>2019-08-30T17:28:38.438Z</updated>
     
-    <content type="html"><![CDATA[<p>你好吗</p><p>我很好</p><a id="more"></a><p>谢谢</p><p>你的</p><p>好意</p><p><img src="/huamuxiong.github.io/huamuxiong/huamuxiong.github.io/2019/08/28/test/1.jpeg" alt></p>]]></content>
+    <content type="html"><![CDATA[<p>你好吗</p><p>我很好</p><a id="more"></a><p>谢谢</p><p>你的</p><p>好意</p><p><img src="/huamuxiong.github.io/huamuxiong/2019/08/28/test/1.jpeg" alt></p>]]></content>
     
     <summary type="html">
     
@@ -37,12 +37,12 @@
   
   <entry>
     <title>hexo-page-blog-test</title>
-    <link href="https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/hexo-page-blog-test/"/>
-    <id>https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/hexo-page-blog-test/</id>
+    <link href="https://github.com/huamuxiong/2019/08/28/hexo-page-blog-test/"/>
+    <id>https://github.com/huamuxiong/2019/08/28/hexo-page-blog-test/</id>
     <published>2019-08-28T09:25:04.000Z</published>
     <updated>2019-08-28T10:13:44.282Z</updated>
     
-    <content type="html"><![CDATA[<p>你好吗</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"hello world"</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> order:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><table><thead><tr><th>名称</th><th>是否必填</th><th>备注</th></tr></thead><tbody><tr><td>id</td><td>是</td><td>编号</td></tr><tr><td>name</td><td>是</td><td>姓名</td></tr><tr><td>sex</td><td>否</td><td>性别</td></tr></tbody></table><blockquote><p>这里是引用</p></blockquote><ol><li>有序列表1</li><li>有序列表2</li></ol><ul><li><p>无序1</p></li><li><p>无序2</p></li><li><input disabled type="checkbox"> <p>任务列表1</p></li><li><input disabled type="checkbox"> <p>任务列表2</p></li></ul><p><img src="/huamuxiong.github.io/huamuxiong/huamuxiong.github.io/2019/08/28/hexo-page-blog-test/hexo-page-blog-test%5C1.jpeg" alt></p>]]></content>
+    <content type="html"><![CDATA[<p>你好吗</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"hello world"</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> order:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><table><thead><tr><th>名称</th><th>是否必填</th><th>备注</th></tr></thead><tbody><tr><td>id</td><td>是</td><td>编号</td></tr><tr><td>name</td><td>是</td><td>姓名</td></tr><tr><td>sex</td><td>否</td><td>性别</td></tr></tbody></table><blockquote><p>这里是引用</p></blockquote><ol><li>有序列表1</li><li>有序列表2</li></ol><ul><li><p>无序1</p></li><li><p>无序2</p></li><li><input disabled type="checkbox"> <p>任务列表1</p></li><li><input disabled type="checkbox"> <p>任务列表2</p></li></ul><p><img src="/huamuxiong.github.io/huamuxiong/2019/08/28/hexo-page-blog-test/hexo-page-blog-test%5C1.jpeg" alt></p>]]></content>
     
     <summary type="html">
     
@@ -55,8 +55,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/hello-world/"/>
-    <id>https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/hello-world/</id>
+    <link href="https://github.com/huamuxiong/2019/08/28/hello-world/"/>
+    <id>https://github.com/huamuxiong/2019/08/28/hello-world/</id>
     <published>2019-08-28T07:38:39.969Z</published>
     <updated>2019-08-28T09:59:23.849Z</updated>
     
