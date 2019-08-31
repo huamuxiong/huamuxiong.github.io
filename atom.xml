@@ -3,11 +3,11 @@
   <title>huamuxiong blogs</title>
   
   
-  <link href="/huamuxiong.github.io/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="https://github.com/huamuxiong/huamuxiong.github.io/"/>
+  <link href="https://huamuxiong.github.io/"/>
   <updated>2019-08-31T06:44:25.957Z</updated>
-  <id>https://github.com/huamuxiong/huamuxiong.github.io/</id>
+  <id>https://huamuxiong.github.io/</id>
   
   <author>
     <name>huamuxiong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>test</title>
-    <link href="https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/test/"/>
-    <id>https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/test/</id>
+    <link href="https://huamuxiong.github.io/2019/08/28/test/"/>
+    <id>https://huamuxiong.github.io/2019/08/28/test/</id>
     <published>2019-08-28T10:20:37.000Z</published>
     <updated>2019-08-31T06:44:25.957Z</updated>
     
@@ -37,12 +37,12 @@
   
   <entry>
     <title>hexo-page-blog-test</title>
-    <link href="https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/hexo-page-blog-test/"/>
-    <id>https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/hexo-page-blog-test/</id>
+    <link href="https://huamuxiong.github.io/2019/08/28/hexo-page-blog-test/"/>
+    <id>https://huamuxiong.github.io/2019/08/28/hexo-page-blog-test/</id>
     <published>2019-08-28T09:25:04.000Z</published>
     <updated>2019-08-28T10:13:44.282Z</updated>
     
-    <content type="html"><![CDATA[<p>你好吗</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"hello world"</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> order:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><table><thead><tr><th>名称</th><th>是否必填</th><th>备注</th></tr></thead><tbody><tr><td>id</td><td>是</td><td>编号</td></tr><tr><td>name</td><td>是</td><td>姓名</td></tr><tr><td>sex</td><td>否</td><td>性别</td></tr></tbody></table><blockquote><p>这里是引用</p></blockquote><ol><li>有序列表1</li><li>有序列表2</li></ol><ul><li><p>无序1</p></li><li><p>无序2</p></li><li><input disabled type="checkbox"> <p>任务列表1</p></li><li><input disabled type="checkbox"> <p>任务列表2</p></li></ul><p><img src="/huamuxiong.github.io/huamuxiong/huamuxiong.github.io/2019/08/28/hexo-page-blog-test/hexo-page-blog-test%5C1.jpeg" alt></p>]]></content>
+    <content type="html"><![CDATA[<p>你好吗</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"hello world"</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> order:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><table><thead><tr><th>名称</th><th>是否必填</th><th>备注</th></tr></thead><tbody><tr><td>id</td><td>是</td><td>编号</td></tr><tr><td>name</td><td>是</td><td>姓名</td></tr><tr><td>sex</td><td>否</td><td>性别</td></tr></tbody></table><blockquote><p>这里是引用</p></blockquote><ol><li>有序列表1</li><li>有序列表2</li></ol><ul><li><p>无序1</p></li><li><p>无序2</p></li><li><input disabled type="checkbox"> <p>任务列表1</p></li><li><input disabled type="checkbox"> <p>任务列表2</p></li></ul><p><img src="/2019/08/28/hexo-page-blog-test/hexo-page-blog-test%5C1.jpeg" alt></p>]]></content>
     
     <summary type="html">
     
@@ -55,16 +55,16 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/hello-world/"/>
-    <id>https://github.com/huamuxiong/huamuxiong.github.io/2019/08/28/hello-world/</id>
+    <link href="https://huamuxiong.github.io/2019/08/28/hello-world/"/>
+    <id>https://huamuxiong.github.io/2019/08/28/hello-world/</id>
     <published>2019-08-28T07:38:39.969Z</published>
     <updated>2019-08-28T09:59:23.849Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><a id="more"></a><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><a id="more"></a><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
